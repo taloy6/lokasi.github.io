@@ -1,4 +1,4 @@
-baseURL = 'https://lokasi.github.io/'
+baseURL = 'https://taloy6.github.io/lokasi.github.io/'
 languageCode = 'zh-cn'
 title = '我的博客'
 theme = 'newsroom'   # 这里必须和主题文件夹名一致
