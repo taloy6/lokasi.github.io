@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'LavishlyYours';
+    src: url('/fonts/LavishlyYours-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nav-brand {
+    font-family: 'LavishlyYours', cursive;
+    /* 可选：调整字体大小 */
+    font-size: 2rem;
+}
