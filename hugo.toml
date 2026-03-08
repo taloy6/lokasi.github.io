@@ -1,0 +1,17 @@
+baseURL = 'https://lokasi.github.io/'
+languageCode = 'zh-cn'
+title = '我的博客'
+theme = 'newsroom'   # 这里必须和主题文件夹名一致
+
+# 可选：添加菜单配置（newsroom 主题通常支持）
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 2
