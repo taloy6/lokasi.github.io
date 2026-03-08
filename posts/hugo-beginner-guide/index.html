@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+  <title>我的第一个 hugo 博客：新手完全指南 | 我的博客</title>
+  <meta charset='utf-8'>
+  <meta name="viewport" content ="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<meta name="keywords" content="我的博客">
+<meta property="og:locale" content='en_US'>
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的第一个 Hugo 博客：新手完全指南">
+<meta property="og:description" content="如何在我的博客上发布新文章：完整流程
+你好！欢迎来到我的博客。今天我来手把手教大家如何在我们的 Hugo 博客上发布一篇新文章。无论你是第一次接触，还是已经写过几篇，相信这篇指南都能帮到你。
+
+1. 生成新文章
+在本地电脑上打开终端（PowerShell 或命令提示符），进入你的博客项目根目录（例如">
+<meta property="og:url" content="https://taloy6.github.io/lokasi.github.io/posts/hugo-beginner-guide/">
+<meta property="og:image" content="images/%!s(&lt;nil&gt;)">
+<link rel="canonical" href="https://taloy6.github.io/lokasi.github.io/posts/hugo-beginner-guide/">
+
+<link rel="apple-touch-icon" sizes="180x180" href='https://taloy6.github.io/lokasi.github.io/apple-touch-icon.png'>
+<link rel="icon" type="image/png" sizes="32x32" href='https://taloy6.github.io/lokasi.github.io/favicon-32x32.png'>
+<link rel="icon" type="image/png" sizes='16x16' href='https://taloy6.github.io/lokasi.github.io/favicon-16x16.png'>
+<link rel="manifest" href='https://taloy6.github.io/lokasi.github.io/site.webmanifest'>
+
+<link rel="stylesheet" href="https://taloy6.github.io/lokasi.github.io/css/styles.648e60c6d86809f863ae1346848574b9c685732794e7851c7d3e557de9ddd293bc1c209f963d5041785c2fd4268470bdfde453a99f550b655d1b4f825eed4682.css" integrity="sha512-ZI5gxthoCfhjrhNGhIV0ucaFcyeU54UcfT5Vfend0pO8HCCflj1QQXhcL9QmhHC9/eRTqZ9VC2VdG0&#43;CXu1Ggg==">
+</head>
+
+  <body>
+    <div class="nav-drop">
+  <div class="nav-body">
+    <div class="nav-close"></div><div class="color_mode">
+  <label for="mode">Toggle Dark Mode</label>
+  <input type="checkbox" class="color_choice" id="mode">
+</div>
+
+  </div>
+</div>
+<header class="nav">
+  <nav class="nav-menu">
+    <a href=https://taloy6.github.io/lokasi.github.io/ class="nav-brand nav_item">
+        我的博客</a>
+    <div class="nav_bar-wrap">
+      <div class="nav_bar"></div>
+    </div>
+  </nav>
+</header>
+
+    <main>
+      
+  <div class="wrap mt post">
+    <div><p class=post_date>08. March 2026</p>
+      <h1 class="post_title">我的第一个 Hugo 博客：新手完全指南</h1>
+      <div class="post_body">
+        <div class="post_inner">
+        
+        
+          <h1 id="如何在我的博客上发布新文章完整流程">如何在我的博客上发布新文章：完整流程</h1>
+<p>你好！欢迎来到我的博客。今天我来手把手教大家如何在我们的 Hugo 博客上发布一篇新文章。无论你是第一次接触，还是已经写过几篇，相信这篇指南都能帮到你。</p>
+<hr>
+<h2 id="1-生成新文章">1. 生成新文章</h2>
+<p>在本地电脑上打开终端（PowerShell 或命令提示符），进入你的博客项目根目录（例如 <code>D:\code\lokasi.github.io</code>）。</p>
+<p>运行以下命令来创建一篇新文章（请将 <code>my-new-post</code> 替换为你想要的文件名，建议使用英文小写和短横线）：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new posts/my-new-post.md
+</span></span></code></pre></div><p>执行后，Hugo 会在 <code>content/posts/</code> 目录下生成一个 Markdown 文件，例如 <code>my-new-post.md</code>。文件内容开头会自动添加一些元信息（称为 <strong>Front Matter</strong>），默认格式可能是这样的：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">+++</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">date</span> = <span style="color:#e6db74">&#39;2026-03-08T20:00:00+08:00&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">draft</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#39;My New Post&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">+++</span>
+</span></span></code></pre></div><p><strong>注意</strong>：这里用的是 TOML 格式（用 <code>+++</code> 包裹，键值之间用等号 <code>=</code>）。这是 Hugo 的默认设置，我们保持统一就好。如果你更喜欢 YAML 格式（用 <code>---</code> 包裹，冒号分隔），也可以修改 <code>archetypes/default.md</code> 模板，但建议先按默认来。</p>
+<hr>
+<h2 id="2-编辑文章内容">2. 编辑文章内容</h2>
+<p>用你喜欢的编辑器（比如 VSCode）打开刚才生成的文件，比如 <code>content/posts/my-new-post.md</code>。</p>
+<h3 id="21-修改-front-matter">2.1 修改 Front Matter</h3>
+<ul>
+<li><strong>标题</strong>：将 <code>title</code> 改为你文章的真实标题，例如 <code>title = '我的第一篇博客文章'</code>。</li>
+<li><strong>发布日期</strong>：通常保持自动生成的日期即可，也可以手动调整。</li>
+<li><strong>草稿状态</strong>：<code>draft = true</code> 表示文章还不会显示在网站上。当你准备好发布时，需要将它改为 <code>draft = false</code>。</li>
+</ul>
+<h3 id="22-编写正文">2.2 编写正文</h3>
+<p>在 <code>+++</code> 下方开始写文章正文，使用 Markdown 语法。例如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>+++
+</span></span><span style="display:flex;"><span>title = &#39;我的第一篇博客文章&#39;
+</span></span><span style="display:flex;"><span>date = 2026-03-08T20:00:00+08:00
+</span></span><span style="display:flex;"><span>draft = false
+</span></span><span style="display:flex;"><span>+++
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># 欢迎！
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>这是我的第一篇博客，很高兴能在这里分享知识。
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 为什么写博客？
+</span></span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> 记录学习过程
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> 分享经验
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> 与大家交流
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>你也可以插入代码块：
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>```python
+</span></span><span style="display:flex;"><span>print(&#34;Hello, world!&#34;)
+</span></span></code></pre></div><pre tabindex="0"><code>
+**小技巧**：
+- 插入图片：将图片放入 `static/images/` 目录，然后在文中使用 `![图片描述](/images/图片名.jpg)`。
+- 添加链接：`[链接文字](https://example.com)`。
+
+---
+
+## 3. 本地预览
+
+在终端运行以下命令，启动 Hugo 内置服务器：
+
+```bash
+hugo server
+</code></pre><p>如果一切正常，你会看到类似输出：</p>
+<pre tabindex="0"><code>Web Server is available at http://localhost:1313/lokasi.github.io/
+</code></pre><p>打开浏览器访问该地址，你就能在博客首页看到刚刚创建的文章（如果文章是草稿，需要加上 <code>-D</code> 参数预览：<code>hugo server -D</code>）。修改文件后，浏览器会自动刷新，非常方便。</p>
+<p><strong>注意</strong>：由于我们的博客部署在子路径 <code>/lokasi.github.io/</code> 下，所以预览地址要加上这个路径。</p>
+<hr>
+<h2 id="4-生成静态文件">4. 生成静态文件</h2>
+<p>当你在本地预览满意后，需要将文章生成最终的静态文件。运行：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo
+</span></span></code></pre></div><p>这个命令会在 <code>public/</code> 目录下生成完整的网站文件（HTML、CSS、JS 等）。生成的 <code>public</code> 目录就是我们将来要部署到服务器上的内容。</p>
+<hr>
+<h2 id="5-部署到-github-pages">5. 部署到 GitHub Pages</h2>
+<p>目前我们采用<strong>手动部署</strong>的方式，将生成的静态文件复制到项目根目录并推送到 GitHub。</p>
+<h3 id="51-复制文件">5.1 复制文件</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 删除根目录下旧的生成文件（避免残留）</span>
+</span></span><span style="display:flex;"><span>Remove-Item -Recurse -Force css, js, fonts, categories, page, tags, index.html, index.xml, sitemap.xml -ErrorAction SilentlyContinue
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 将 public 下的所有内容复制到根目录</span>
+</span></span><span style="display:flex;"><span>Copy-Item -Recurse -Force public<span style="color:#ae81ff">\*</span> .
+</span></span></code></pre></div><h3 id="52-提交并推送到-github">5.2 提交并推送到 GitHub</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;发布新文章：我的第一篇博客&#34;</span>
+</span></span><span style="display:flex;"><span>git push origin main
+</span></span></code></pre></div><p>推送成功后，等待 1-2 分钟，访问你的博客网址（例如 <code>https://taloy6.github.io/lokasi.github.io/</code>），就能看到新文章了。</p>
+<hr>
+<h2 id="6-常见问题与注意事项">6. 常见问题与注意事项</h2>
+<h3 id="q1文章为什么不显示">Q1：文章为什么不显示？</h3>
+<ul>
+<li>检查 <code>draft</code> 是否为 <code>false</code>。</li>
+<li>确认文件保存在 <code>content/posts/</code> 目录下，文件名没有特殊字符（建议只用字母、数字、短横线）。</li>
+<li>运行 <code>hugo server</code> 看是否有报错信息。</li>
+</ul>
+<h3 id="q2front-matter-格式错误怎么办">Q2：Front Matter 格式错误怎么办？</h3>
+<ul>
+<li>如果是 TOML 格式，必须用 <code>+++</code> 包裹，键值之间用等号，例如 <code>title = '我的标题'</code>。</li>
+<li>如果是 YAML 格式，用 <code>---</code> 包裹，键值之间用冒号，例如 <code>title: &quot;我的标题&quot;</code>。</li>
+<li><strong>不要混用两种格式</strong>，否则 Hugo 会报错。</li>
+</ul>
+<h3 id="q3图片或-css-加载不出来">Q3：图片或 CSS 加载不出来？</h3>
+<ul>
+<li>图片放在 <code>static/images/</code> 目录，引用时路径以 <code>/images/</code> 开头。</li>
+<li>确保 <code>.nojekyll</code> 文件存在，否则 GitHub Pages 可能会干扰静态文件。</li>
+</ul>
+<h3 id="q4如何让新文章出现在首页">Q4：如何让新文章出现在首页？</h3>
+<p>只要 <code>draft: false</code>，Hugo 会自动将文章按时间倒序显示在首页的文章列表中。</p>
+<hr>
+<h2 id="7-进阶建议">7. 进阶建议</h2>
+<ul>
+<li><strong>使用 GitHub Actions 自动部署</strong>：可以配置工作流，每次推送到 <code>main</code> 分支时自动生成并部署，省去手动复制文件的麻烦。</li>
+<li><strong>学习 Markdown 高级语法</strong>：如表格、脚注、数学公式等，让文章更丰富。</li>
+<li><strong>自定义主题</strong>：通过修改 <code>layouts/</code> 或添加 <code>static/css/custom.css</code> 来个性化博客外观。</li>
+</ul>
+<hr>
+<p>现在你已经完全掌握了发布博客文章的流程，快去写下你的第一篇精彩内容吧！如果在操作中遇到任何问题，欢迎随时交流。</p>
+<p>Happy blogging!</p>
+
+        </div>
+        <div class="post_extra mb-2">
+          
+<div class="copy" data-before="分享故事" data-after="已复制">
+  <svg class="icon">
+    <use xlink:href="#copy"></use>
+  </svg>
+</div>
+        </div>
+        <div>
+        
+        </div>
+      </div>
+    </div>
+    <a href=https://taloy6.github.io/lokasi.github.io/ class="post_nav"><span class="post_next">Latest Posts
+      <svg class="icon icon_scale">
+        <use xlink:href="#double-arrow"></use>
+      </svg>
+    </span></a>
+  </div>
+
+    </main>
+    <footer class="footer wrap pale">
+  <p>&copy;&nbsp;<span class="year"></span>&nbsp;我的博客</p>
+  <p class="attribution upcase">由 <a href = '<no value>' target = '_blank' title = '领英个人档案' rel = 'nonopener'><no value></a> 设计</p>
+</footer>
+
+
+<script src="https://taloy6.github.io/lokasi.github.io/js/index.min.82262713749a729970ef079e434d001f0e58ec1243f9d12c819ddcb597c05b2f938330dc38bd0ce5cd965003c2a52a7375eb3ad8ddd26f16e788fa74b3f5446a.js"></script>
+
+    <svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 699.428 699.428" id="copy">
+    <path d="M502.714 0H240.428C194.178 0 153 42.425 153 87.429l-25.267.59c-46.228 0-84.019 41.834-84.019 86.838V612c0 45.004 41.179 87.428 87.429 87.428H459c46.249 0 87.428-42.424 87.428-87.428h21.857c46.25 0 87.429-42.424 87.429-87.428v-349.19L502.714 0zM459 655.715H131.143c-22.95 0-43.714-21.441-43.714-43.715V174.857c0-22.272 18.688-42.993 41.638-42.993l23.933-.721v393.429C153 569.576 194.178 612 240.428 612h262.286c0 22.273-20.765 43.715-43.714 43.715zm153-131.143c0 22.271-20.765 43.713-43.715 43.713H240.428c-22.95 0-43.714-21.441-43.714-43.713V87.429c0-22.272 20.764-43.714 43.714-43.714H459c-.351 50.337 0 87.975 0 87.975 0 45.419 40.872 86.882 87.428 86.882H612v306zm-65.572-349.715c-23.277 0-43.714-42.293-43.714-64.981V44.348L612 174.857h-65.572zm-43.714 131.537H306c-12.065 0-21.857 9.77-21.857 21.835 0 12.065 9.792 21.835 21.857 21.835h196.714c12.065 0 21.857-9.771 21.857-21.835 0-12.065-9.792-21.835-21.857-21.835zm0 109.176H306c-12.065 0-21.857 9.77-21.857 21.834 0 12.066 9.792 21.836 21.857 21.836h196.714c12.065 0 21.857-9.77 21.857-21.836 0-12.064-9.792-21.834-21.857-21.834z"></path>
+  </symbol>
+  <symbol viewBox="0 0 53 42" xmlns="http://www.w3.org/2000/svg" id="double-arrow">
+    <path d="M.595 39.653a1.318 1.318 0 0 1 0-1.864L16.55 21.833a1.318 1.318 0 0 0 0-1.863L.595 4.014a1.318 1.318 0 0 1 0-1.863L2.125.62a1.318 1.318 0 0 1 1.864 0l19.35 19.349a1.318 1.318 0 0 1 0 1.863l-19.35 19.35a1.318 1.318 0 0 1-1.863 0zm29 0a1.318 1.318 0 0 1 0-1.864L45.55 21.833a1.318 1.318 0 0 0 0-1.863L29.595 4.014a1.318 1.318 0 0 1 0-1.863l1.53-1.53a1.318 1.318 0 0 1 1.864 0l19.35 19.349a1.318 1.318 0 0 1 0 1.863l-19.35 19.35a1.318 1.318 0 0 1-1.863 0z"></path>
+  </symbol>
+</svg>
+  </body>
+</html>
